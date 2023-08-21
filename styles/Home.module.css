@@ -156,4 +156,22 @@
 
 .card:hover .details {
   display: block;
+} 
+/*Contact_image*/ 
+.contactImage {
+  max-height:800px ;
+  max-width: 800px;
+  
+  background-size: cover;
+  background-position: center;
+  
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.overlayText {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px; 
+  z-index: -1;
 }
