@@ -3,7 +3,9 @@ import Image from "../components/images";
 import Container1 from "../components/container1"  
 import Container2 from "../components/container2" 
 import Footer from "../components/footer";
-import Cards from "../components/cards"
+import Cards from "../components/cards"  
+import Our_jobs_button from "../components/our_job";
+import Styles from "../styles/Home.module.css" 
 
  function Home() {
   return (
@@ -19,8 +21,13 @@ import Cards from "../components/cards"
     <Container1/> 
     <Container2/>  
     <Header/>  
+    <div className={Styles.parent}>
     <Cards/>
-    <Footer/>
+    <Cards/>
+    <Cards/>
+    </div>
+    <Our_jobs_button/>
+    
     </div>
   )
 } 
