@@ -8,12 +8,14 @@ import QuoteForm from "../components/quoteform";
 
 function Home() {
   return (
-    <div>
-      <Image />
-      <Header />
-      <Container1 />
-      <Container2 />
-      <Container1 />
+    <div>  
+      <Image/>
+      <Header/> 
+      <Header/>
+      <ProfileImage /> 
+      <Container1/> 
+      <Container2/> 
+      <Container1/> 
       <Form />
       <QuoteForm />
       <Footer />
