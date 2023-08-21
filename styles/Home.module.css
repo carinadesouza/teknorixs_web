@@ -145,3 +145,8 @@
 .card:hover .details {
   display: block;
 }
+
+.profileimg 
+{
+border-radius: 5000000px;
+}
