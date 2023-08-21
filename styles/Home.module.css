@@ -3,12 +3,14 @@
   padding:0;
   box-sizing: border-box; 
   
-} */
+} */  
+
+/*Header*/
 .header{
   background-color: rgb(38, 88, 173); 
   color: white; 
   padding: 20px 35px; 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+  font-family: "-apple-system ", "BlinkMacSystemFont ", "Segoe UI", "Roboto", 
   "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
@@ -19,7 +21,8 @@
 } 
 .header p{
   font-weight: 700;
-} 
+}  
+/*container 1 and 2*/
 .flexContainer { 
   margin-top: 10px;
   display: flex;
@@ -73,7 +76,9 @@
 .flexContainer .buttonGreen{
   background-color: #09ab6f;
   border-color: #09ab6f; 
-} 
+}   
+
+/*form*/
 .formStyle{ 
   
   background-color: #ffc801 ;
@@ -97,22 +102,29 @@
 }  
 .formStyle Input{
   padding: 10px 28px;
-}
+}  
+/*footer*/
 .footer{
   padding:150px;
   background-color: black;
-} 
+}  
+.parent{
+  display: flex;
+  flex-direction: row ;
+}
+/*card*/
 .card { 
-  width: 300px;
+  width: 300px; 
+  height: 300px;
   padding: 20px;
   border: 1px solid #ccc;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   transition: background-color 0.3s ease-in-out;
   position: relative;
 }
 
 .card:hover {
-  background-color: #e0e0e0; /* Adjust color as needed */
+  background-color: #b2caec; /* Adjust color as needed */
 }
 
 .initialDetails {

@@ -5,6 +5,7 @@ import Container2 from "../components/container2"
 import Form from "../components/form" ;
 import Footer from "../components/footer"
 import ProfileImage from "../components/profileimg";
+import QuoteForm from "../components/quoteform"
 
  function Home() {
   return (
@@ -16,6 +17,7 @@ import ProfileImage from "../components/profileimg";
     <Container2/> 
     <Container1/> 
     <Form/> 
+    <QuoteForm/>
     <Footer/>
     </div>
   )
