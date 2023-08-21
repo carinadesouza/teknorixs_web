@@ -1,91 +1,147 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+/* *{
+  margin:0;
+  padding:0;
+  box-sizing: border-box; 
+  
+} */
+.header{
+  background-color: rgb(38, 88, 173); 
+  color: white; 
+  padding: 20px 35px; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+} 
+.header h1{
+  font-size: 2.4rem; 
+  font-weight: 600; 
+} 
+.header p{
+  font-weight: 700;
+} 
+.flexContainer { 
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between; /* Keeps space between items */
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.alignLeft {
+  margin-right: auto; /* Aligns the item to the left */ 
+  margin: 0px 60px;
+}
+.flexContainer h1{
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 1rem;
+} 
+.flexContainer p{
+ line-height: 2.5rem;
+  font-size: 22px;
+} 
+
+.alignRight {
+  margin-left: auto; /* Aligns the item to the right */
+  margin: 0px 60px;
+} 
+.flexContainer hr{ 
+  background-color: blue;  
+ position: absolute;
+  margin-top: -28px;
+  font-weight: bold;
+  width: 70px;
+  height: 5px;
+} 
+.flexContainer button{ 
+  color: #fff;
+  
+  min-width: 120px; 
+  display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 4rem; 
+}   
+.flexContainer .buttonGreen:hover {
+  background-color: #198b5e; /* New background color on hover */
+}
+.flexContainer .buttonGreen{
+  background-color: #09ab6f;
+  border-color: #09ab6f; 
+} 
+.formStyle{ 
+  
+  background-color: #ffc801 ;
+  background-image: url(https://www.teknorix.com/wp-content/uploads/2019/01/Contact-Form-Yellow-Background-Image.png);
+  background-repeat: no-repeat;
+
+  background-size: contain; 
+  padding: 60px 80px; 
+  
+} 
+.formContainer{
+  align-items: center; 
+  padding-left: 320px;
+}  
+.formContainer p{
+  color: white; 
+}   
+.formContainer h1{ 
+  padding-left: 120px;
+  color: white;
+}  
+.formStyle Input{
+  padding: 10px 28px;
+}
+.footer{
+  padding:150px;
+  background-color: black;
+} 
+.card { 
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.card:hover {
+  background-color: #e0e0e0; /* Adjust color as needed */
 }
 
-.title {
-  margin: 0 0 1rem;
-  line-height: 1.15;
-  font-size: 3.6rem;
+.initialDetails {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #555;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.title {
-  text-align: center;
+.card:hover .initialDetails {
+  display: none;
 }
 
-.title,
-.description {
-  text-align: center;
+.details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #555;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.card:hover .details {
+  display: block;
 }
